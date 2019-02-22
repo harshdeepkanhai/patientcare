@@ -1,5 +1,4 @@
 <?php
-$debug = (bool)getenv('CAKEPHP_DEBUG');
 return [
     /**
      * Debug Level:
@@ -10,7 +9,7 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => $debug,
+    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
 
     /**
      * Configure basic information about the application.
