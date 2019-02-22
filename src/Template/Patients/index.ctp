@@ -18,8 +18,6 @@
                 <th scope="col"><?= $this->Paginator->sort('city') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('state') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('zipcode') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('email') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('phone') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -32,8 +30,6 @@
                 <td><?= h($patient->city) ?></td>
                 <td><?= h($patient->state) ?></td>
                 <td><?= h($patient->zipcode) ?></td>
-                <td><?= h($patient->email) ?></td>
-                <td><?= h($patient->phone) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $patient->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $patient->id]) ?>
